@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply text-lg
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* color */
+.bg-primary {
+    background-color: rgb(245 158 11); /*border-amber-500*/
+}
+
+.bg-secondery {
+    background: rgb(251 191 36);/*border-amber-400*/
+}
+
+.bg-accent {
+    background: rgb(251 191 36);
+}
+
+.text-accent {
+    color:  rgb(251 191 36);
+}
+
+
+nav li a {
+    @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+    color: rgb(69 26 3);
+    transition: all 0.3 s ease-in-out;
+}
+
+.mobile-nav {
+    @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+}
+
+
+
